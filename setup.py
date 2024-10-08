@@ -19,7 +19,7 @@ def get_requirements(file_path:str)->List[str]:
 
 setup(
 
-    name='mlprojects',
+    name='student-performance-predictor',
     version = '0.0.1',
     author = 'Tony',
     author_email = 'tony.chu805@gmail.com',
