@@ -25,7 +25,7 @@ def predict_datapoint():
 
     if request.method == 'GET':
 
-        return render_template('home.html')
+        return render_template('home.html', results = None, model_report = None)
     
     else:
 
@@ -47,7 +47,7 @@ def predict_datapoint():
 
         predict_pipeline=PredictPipeline()
         print("Mid Prediction")
-        results=predict_pipeline.predict(pred_df)
+        results = predict_pipeline.predict(pred_df)
         print("after Prediction")
         return render_template('home.html',results=results[0])
 

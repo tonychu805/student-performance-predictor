@@ -7,7 +7,7 @@ import numpy as np
 from src.exception import CustomException
 from src.utils import load_object
 
-
+import json
 
 class PredictPipeline:
 
@@ -21,19 +21,13 @@ class PredictPipeline:
             
             model_path=os.path.join("artifacts","model.pkl")
             preprocessor_path=os.path.join('artifacts','preprocessor.pkl')
+            #model_report_path = os.path.join('artifacts','model_report.json')
             print("Before Loading")
             model=load_object(file_path=model_path)
             preprocessor=load_object(file_path=preprocessor_path)
+            #with open(model_report_path, 'r') as f:
+            #    model_report = json.load(f)
             print("After Loading")
-            '''
-            # Data validation and cleaning
-            categorical_columns = ['gender', 'race_ethnicity', 'parental_level_of_education', 'lunch', 'test_preparation_course']
-            for col in categorical_columns:
-                if features[col].isnull().any():
-                    features[col] = features[col].fillna('Unknown')  # or use a suitable default value
-            print("Input features:")
-            print(features)
-            '''
             data_scaled=preprocessor.transform(features)
             print("Before Return")
             preds=model.predict(data_scaled)
