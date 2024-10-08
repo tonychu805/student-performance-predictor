@@ -1,6 +1,6 @@
 # Student Performance Predictor
 
-This project is a web application that predicts student math scores based on various demographic and academic factors. It uses machine learning models to make predictions and provides a user-friendly interface for input and result display.
+This project is an end to end data science project that provide a web interface to help users to predict student math scores based on various demographic and academic factors. It uses machine learning models to make predictions and provides a user-friendly interface for input and result display.
 
 ## Features
 
@@ -121,14 +121,6 @@ The model predicts a student's math score based on the input features. Here's ho
    - Students and parents can gain insights into potential areas for improvement.
    - Administrators can use aggregate predictions to allocate resources and develop targeted programs.
 
-## Model Performance
-
-- **R-squared Score**: [Insert your model's R2 score here, e.g., 0.85]
-- **Mean Absolute Error**: [Insert MAE here, e.g., 5.2 points]
-- **Root Mean Squared Error**: [Insert RMSE here, e.g., 6.8 points]
-
-These metrics indicate that the model explains [X]% of the variance in math scores and, on average, predictions are within [Y] points of the actual score.
-
 ## Ethical Considerations
 
 It's important to use this predictive model responsibly:
@@ -141,16 +133,6 @@ It's important to use this predictive model responsibly:
 - Incorporate more features such as study habits, extracurricular activities, and school resources.
 - Experiment with advanced models like neural networks or ensemble methods.
 - Develop a time-series component to track student progress over multiple assessments.
-
-## Contributing
-
-Contributions to improve the project are welcome. Please follow these steps:
-
-1. Fork the repository
-2. Create a new branch (`git checkout -b feature-branch`)
-3. Make your changes and commit (`git commit -am 'Add some feature'`)
-4. Push to the branch (`git push origin feature-branch`)
-5. Create a new Pull Request
 
 ## Contact
 
