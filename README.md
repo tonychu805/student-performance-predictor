@@ -134,6 +134,3 @@ It's important to use this predictive model responsibly:
 - Experiment with advanced models like neural networks or ensemble methods.
 - Develop a time-series component to track student progress over multiple assessments.
 
-## Contact
-
-Project Link: [https://github.com/your-username/student-performance-predictor](https://github.com/your-username/student-performance-predictor)
